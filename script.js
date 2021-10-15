@@ -1,8 +1,13 @@
-function computerPlay () {
-    const generator = 0;
-    for (let i = 0; i < 5; i++) {
-        let state = (Math.random()*10);
-        return state+generator;
-    }
-    return generator;
+function computerPlay() {
+  for (let i = 0; i < 5; i++) {
+    let generator = Math.round(Math.random() * 9);
+    return generator <= 9 && generator > 6
+      ? console.log("rock")
+      : generator >= 6
+      ? console.log("scissors")
+      : console.log("paper");
+  }
 }
+
+let test = computerPlay();
+console.log(test);
