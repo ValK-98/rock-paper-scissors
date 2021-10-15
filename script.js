@@ -1,13 +1,16 @@
 function computerPlay() {
   for (let i = 0; i < 5; i++) {
-    let generator = Math.round(Math.random() * 9);
+    const generator = Math.round(Math.random() * 9);
     return generator <= 9 && generator > 6
-      ? console.log("rock")
+      ? "rock"
       : generator >= 6
-      ? console.log("scissors")
-      : console.log("paper");
+      ? "scissors"
+      : "paper";
   }
 }
+function game (playerSelection, computerSelection) {
+  return playerSelection.toLowerCase() 
+}
 
-let test = computerPlay();
-console.log(test);
+
+console.log(game("rock", computerPlay()));
