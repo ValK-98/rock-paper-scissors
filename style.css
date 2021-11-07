@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  background-color: #f1e9d2;
+  font-family: "Red Hat Mono", monospace;
+}
+
+#player-buttons {
+  display: flex;
+  justify-content: center;
+}
+.player-button {
+  height: 10em;
+  width: 10em;
+  background-color: white;
+  border: solid 0.1px black;
+  border-radius: 50%;
+  margin: 1em;
+}
