@@ -53,6 +53,6 @@ function endScore() {
   else return console.log("Wow, it's a tie!");
 }
 
-onload = function () {
-  game();
-};
+// onload = function () {
+//   game();
+// };
