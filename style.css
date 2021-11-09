@@ -31,7 +31,12 @@ body {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 1em;
+}
+
+#round {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 #player-buttons {
@@ -40,7 +45,7 @@ body {
   justify-content: center;
   align-content: center;
   gap: 1em;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 .player-button {
   height: 10em;
@@ -49,8 +54,17 @@ body {
   border: solid 0.1px black;
   border-radius: 50%;
 }
+
+.player-button:hover {
+  height: 9.9em;
+  width: 9.9em;
+  background-color: rgb(216, 162, 162);
+  border: solid 1.5px black;
+  border-radius: 50%;
+}
 #scores {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 1em;
 }
