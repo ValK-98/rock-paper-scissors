@@ -97,6 +97,8 @@ troll.addEventListener("click", trollSelect);
 function lost() {
   imgRemove();
   endText.innerHTML = `You lost! Better luck next time!`;
+  endText.style.fontSize = "1em";
+  endText.style.fontStyle = "italic";
   pcButton.append(endText);
   buttonCreate();
 }
@@ -104,13 +106,17 @@ function lost() {
 function win() {
   imgRemove();
   endText.innerHTML = `You Won! How does it feel to win against a machine?`;
-  pcButton.append(endText);
+  endText.style.fontSize = "1em";
+  endText.style.fontStyle = "italic";
+  pcButton.append(endText); 
   buttonCreate();
 }
 
 function tie() {
   imgRemove();
   endText.innerHTML = `It's a...Tie? Well, this is awkward.`;
+  endText.style.fontSize = "1em";
+  endText.style.fontStyle = "italic";
   pcButton.append(endText);
   buttonCreate();
 }

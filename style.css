@@ -15,6 +15,19 @@ body {
 /* div {
   border-style: dotted dashed;
 } */
+button {
+  font-family: "Red Hat Mono", monospace;
+  display: flex;
+  text-decoration: none;
+  margin-top: 1em;
+  background-color: rgb(240, 204, 184);
+  font-size: 15px;
+}
+
+button:hover {
+  color: #f1e9d2;
+  background-color: brown;
+}
 
 #container {
   display: flex;
@@ -72,9 +85,16 @@ body {
   margin-top: 1em;
 }
 
-#npc-choice{
+#npc-choice {
   display: flex;
   margin-top: 1em;
   margin-bottom: 1em;
   justify-content: center;
+}
+#info {
+  position:absolute;
+  top: 0;
+  left: center;
+  font-weight: 600;
+  font-style: italic;
 }
