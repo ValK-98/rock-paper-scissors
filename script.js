@@ -124,6 +124,12 @@ function imgRemove() {
 
 function buttonCreate() {
   let btn = document.createElement("button");
+  btn.setAttribute("id","restartButton");
   btn.innerHTML = "Try again?";
   computerSelection.append(btn);
+  restartButton.addEventListener("click", restart);
+}
+
+function restart() {
+  location.reload()
 }
