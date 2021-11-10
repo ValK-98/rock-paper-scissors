@@ -6,6 +6,7 @@ body {
   border: 0;
   font-size: 100%;
   font: inherit;
+  white-space: pre-line;
 }
 body {
   background-color: #f1e9d2;
@@ -14,6 +15,7 @@ body {
 /* div {
   border-style: dotted dashed;
 } */
+
 #container {
   display: flex;
   flex-direction: column;
@@ -67,4 +69,11 @@ body {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1em;
+}
+#npc-choice{
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-content: center;
 }
