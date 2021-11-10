@@ -13,6 +13,7 @@ const ogre = document.getElementById("ogre");
 const troll = document.getElementById("troll");
 const pcButton = document.getElementById("player-buttons");
 const endText = document.createElement("div");
+const computerSelection = document.getElementById("npc-choice");
 
 function computerPlay() {
   for (let i = 0; i < 2; i++) {
@@ -95,32 +96,34 @@ troll.addEventListener("click", trollSelect);
 
 function lost() {
   imgRemove();
-  endText.innerHTML = `You lost! Better luck next time!
-
-  Try again?`;
+  endText.innerHTML = `You lost! Better luck next time!`;
   pcButton.append(endText);
+  buttonCreate();
 }
 
 function win() {
   imgRemove();
-  endText.innerHTML = `You Won! How does it feel to win against a machine?
-
-  Try again?`;
+  endText.innerHTML = `You Won! How does it feel to win against a machine?`;
   pcButton.append(endText);
+  buttonCreate();
 }
 
 function tie() {
   imgRemove();
-  endText.innerHTML = `It's a...Tie? Well, this is awkward.
-
-  Try again?`;
+  endText.innerHTML = `It's a...Tie? Well, this is awkward.`;
   pcButton.append(endText);
+  buttonCreate();
 }
 
 function imgRemove() {
-  let computerSelection = document.getElementById("npc-choice");
-  computerSelection.remove();
+  computerSelection.removeChild(computerSelection.firstChild);
   while (pcButton.firstChild) {
     pcButton.removeChild(pcButton.firstChild);
   }
+}
+
+function buttonCreate() {
+  let btn = document.createElement("button");
+  btn.innerHTML = "Try again?";
+  computerSelection.append(btn);
 }
