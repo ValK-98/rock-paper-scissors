@@ -108,7 +108,7 @@ function playRound(playerSelection) {
       userScore++,
       (document.getElementById(
         "npc-choice"
-      ).innerHTML = `You win! Computer chose ${computerPlay()}.`)
+      ).innerHTML = `You win! Computer chose ${computerSelection}.`)
     );
   else if (
     (playerSelection.toLowerCase() === "ogre" &&
@@ -122,7 +122,7 @@ function playRound(playerSelection) {
       compScore++,
       (document.getElementById(
         "npc-choice"
-      ).innerHTML = `You lose! Computer chose ${computerPlay()}.`)
+      ).innerHTML = `You lose! Computer chose ${computerSelection}.`)
     );
   else return (document.getElementById("npc-choice").innerHTML = `It's a tie!`);
 }
